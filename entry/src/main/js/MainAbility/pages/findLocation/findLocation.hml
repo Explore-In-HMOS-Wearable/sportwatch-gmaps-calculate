@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="item-container">
+        <image src="../../pages/common/assets/location.png" class="image"></image>
+        <input type="button" class="btn" onclick="getGeolocation"
+               value="{{ $t('Find My Location') }}"/>
+    </div>
+</div>

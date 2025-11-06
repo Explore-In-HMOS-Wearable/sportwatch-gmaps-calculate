@@ -1,0 +1,4 @@
+<div class="container" onswipe="touchMove">
+    <text class="message">{{ haversineDistance }}</text>
+    <text class="duration-time">{{ location }}</text>
+</div>

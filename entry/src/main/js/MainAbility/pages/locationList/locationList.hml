@@ -1,0 +1,7 @@
+<div class="container">
+    <list class="wraper">
+        <list-item for="{{ locationData }}" class="item" on:click="selectLocation({{ item }})">
+            <text class="title">{{ $item.location }}</text>
+        </list-item>
+    </list>
+</div>
