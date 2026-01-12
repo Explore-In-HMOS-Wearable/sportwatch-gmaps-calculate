@@ -7,38 +7,30 @@ export default {
             latitude: '',
             longitude: '',
             altitude: '',
-            accuracy: '',
-        },
+            accuracy: ''
+        }
     },
 
     getGeolocation: function () {
-        var that = this
         {
             geolocation.getLocation({
                 timeout: 90000,
                 success: function (location) {
-                    that.geolocationGetData = location
+                    this.geolocationGetData = location
 
                     router.replace({
                         uri: 'pages/locationList/locationList',
                         params:{
                             lat1: location.latitude,
-                            long1: location.longitude,
-                        } ,
+                            long1: location.longitude
+                        }
                     });
 
                 },
                 fail: function (errorMsg, errorCode) {
-                    console.info(errorCode + ': ' + errorMsg)
-                },
-
+                    console.info(`${errorCode}: ${errorMsg}`)
+                }
             })
         }
-    },
-
-    swipeHandler(e) {
-        if (e.direction == "right") {
-            //app.terminate();
-        }
-    },
+    }
 }

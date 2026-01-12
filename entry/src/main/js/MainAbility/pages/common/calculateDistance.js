@@ -19,9 +19,9 @@ export function formatDistance(meters) {
         return '--'
     }
     if (meters < 1000) {
-        return Math.round(meters) + ' m'
+        return `${Math.round(Number(meters ?? 0))} m`;
     } else {
-        return (meters / 1000).toFixed(2) + ' km'
+        return (meters / 1000).toFixed(2).toString() + ' km'
     }
 }
 

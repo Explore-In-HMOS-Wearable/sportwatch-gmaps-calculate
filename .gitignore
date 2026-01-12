@@ -1,38 +1,105 @@
-/node_modules
-/oh_modules
-/local.properties
-/.idea
-**/build
-/.hvigor
-.cxx
-/.clangd
-/.clang-format
-/.clang-tidy
-**/.test
+############################
+# HarmonyOS / ArkTS & JS (Lite) Project
+############################
+
+# Node modules & OH modules
+node_modules/
+**/node_modules/
+oh_modules/
+**/oh_modules/
+
+# Local & IDE specific
+local.properties
+**/local.properties
+.idea/
+**/.idea/**
+
+# Build & tool caches
+build/
+**/build/
+.hvigor/
+**/.hvigor/**
+.cxx/
+**/.cxx/**
+
+# Clang tools
+.clangd
+**/.clangd
+.clang-format
+**/.clang-format
+.clang-tidy
+**/.clang-tidy
+
+# Test & analyzer & preview
+.test
+**/.test/**
+.appanalyzer
+**/.appanalyzer/**
+.preview
+**/.preview/**
+preview/
+**/preview/**
+
+# Lock / config files treated as forbidden by scanner
+oh-package-lock.json5
+**/oh-package-lock.json5
+code-linter.json5
+**/code-linter.json5
+
+############################
+# Python helper scripts
+############################
+*.py
+__pycache__/
+*.pyc
+
+############################
+# DevEco / Gradle / native
+############################
+.gradle/
+.externalNativeBuild/
+
+############################
+# Editor & system junk
+############################
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+############################
+# Logs & temp files
+############################
+*.log
+logs/
+*.tmp
+
+############################
+# Output / dist
+############################
+coverage/
+dist/
+out/
+
+############################
+# extra metadata
+############################
+*.iml
+
+/detail/
+/shell/
+
+*.xls
+*.xlsx
+*.xlsm
+*.xltx
+*.xltm
+
 /.appanalyzer
-/.cache/.lite_cache/default-development/1.pack
-/material/fd/2/1e5f26c63b1f40d4a1e397044139f33a
-/.cache/.lite_cache/default-development/2.pack
-/.cache/.lite_cache/default-development/3.pack
-/.cache/.lite_cache/default-development/4.pack
-/material/ac/4de750571c5b4bce97a9e6dc88e491b9
-/.cache/.lite_cache/default-development/5.pack
-/.cache/.lite_cache/default-development/6.pack
-/.cache/.lite_cache/default-development/7.pack
-/.cache/.lite_cache/default-development/8.pack
-/.cache/.lite_cache/default-development/9.pack
-/.cache/.lite_cache/default-development/10.pack
-/.cache/.lite_cache/default-development/11.pack
-/cers/material/fd/2/93c3cf7ba37a4d6787662cdbe2e10ddb
-/material/fd/1/130dd3871cfb4388bd1f94b18c32aa96
-/material/ce/5611df5f18bc46a6b6d23c254f492201
-/cers/material/fd/0/70613f2a6b1e4e17911ccb90108e1bbc
-/cers/material/ce/7623730c77e647cfafb787e2eb8bbd91
-/cers/material/fd/1/9167660c70764313bbbb90833d07f39d
-/cers/material/ac/d91b0263dd5c490ab3a194b41e38a569
-/material/fd/0/e2fa269faf2a4b9dad61fa93e2246c4a
-/cers/GmapsCalculate.cer
-/cers/GmapsCalculate.csr
-/cers/GmapsCalculate.p12
-/cers/GmapsCalculateDebug.p7b
-/.cache/.lite_cache/default-development/index.pack.old
+/.cache
+/material
+*.csr
+*.p12
+*.cer
+*.p7b

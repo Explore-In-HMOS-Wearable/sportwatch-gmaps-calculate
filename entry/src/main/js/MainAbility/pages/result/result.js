@@ -5,7 +5,7 @@ export default {
         lat1: 0,
         log1: 0,
         lat2: 0,
-        log2: 0,
+        log2: 0
     },
 
     haversineDistance(
@@ -21,7 +21,7 @@ export default {
             Math.sin(dLon / 2) * Math.sin(dLon / 2);
         const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
         this.distance = R * c;
-    },
+    }
 }
 
 function toRadianss(degrees) {

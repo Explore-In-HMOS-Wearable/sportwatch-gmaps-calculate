@@ -18,7 +18,7 @@ export function getPlaylist(path) {
             },
             fail: (data, err) => {
                 return accumulate;
-            },
+            }
         })
 
     }

@@ -18,6 +18,8 @@ location in the list. It helps to easily see how far the watch is from different
 The app is used to check how far the watch is from preset locations.
 
 # Technology
+
+## Stack
 **Languages:** JavaScript                        
 **Frameworks:** HarmonyOS SDK 5.0.0 (API 12)                          
 **Tools:** DevEco Studio                                                                
